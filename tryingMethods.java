@@ -1,8 +1,18 @@
 //this is a class that put methods to try
-public class tryingMethods {
+public class TryingMethods {
+
+    public static void main(String[] args) {
+        daysOfTheWeek();
+        sumNumbers();
+        
+    }
+
+
+//this is a switch case method
+
     static void daysOfTheWeek()
     {
-        int days=5;
+        int days=4;
         switch (days) {
                 case 1:
             System.out.println("Monday");    
@@ -24,17 +34,33 @@ public class tryingMethods {
                 break;
                 case 7:
             System.out.println("Sunday");    
-                break;
-            
-
+                break;        
             
         }
 
         System.out.println("");
     }
-    public static void main(String[] args) {
-        daysOfTheWeek();
-
         
+    static int sumNumbers() {
+        int sum = 0;
+        for (int i = 12; i < 103; i++) {
+            if (i % 2 == 0)
+                sum += i;
+        }
+
+        return sum;
     }
-}
+    static int zeroTo1000Sum() {
+        int sum = 0;
+        int i = 0;
+        while (i < 1000) {
+            sum += i++;
+        }
+
+        return sum;
+    }
+
+
+
+
+ 
